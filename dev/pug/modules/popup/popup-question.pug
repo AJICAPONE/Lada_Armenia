@@ -1,0 +1,20 @@
+#popop-question.modal.fade.popup-bg(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content.popup2-content
+                button.close.popup-close(type='button' data-dismiss='modal' aria-label='Close')
+                    +icon('close')
+                .popup-question-content
+                    .popup-1-right-content
+                        h3.popup-title.text-center.fs-22 У вас есть вопросы?
+                        p.popup-text-question Оставьте свой номер телефона и мы вам перезвоним
+                        form
+                            input.teamlight-inputs(type="text" placeholder="Ваше имя")
+                            input.teamlight-inputs.phone-mask(type="phone" placeholder="Номер телефона")
+                            button#submit-checkout2.teamlight-buttons-buy.popup-buy.border-0.mb-3.checkout-order(type="submit" disabled="disabled") Заказать звонок
+                            .checked-checkout-order
+                                input#checked-checkout2.checkout-checkbox(type="checkbox" onchange="document.getElementById('submit-checkout2').disabled = !this.checked;")
+                                label(for="checked-checkout2")
+                                span Я согласен с условиями #[a.teamlight-link(href="/") пользовательского соглашения]
+
+
+

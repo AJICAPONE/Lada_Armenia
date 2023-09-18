@@ -1,0 +1,243 @@
+header
+  position relative
+.input-search.active
+  border 1px solid #00B2CB
+
+.search-popup
+  position absolute
+  background: #FFFFFF;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  top 50px
+  right 0
+  left 0
+  z-index 51
+  padding 20px
+  overflow-y scroll
+  height 463px
+
+.search-popup::-webkit-scrollbar
+  width 0
+
+.search-popup-item
+  margin-bottom 10px
+
+  a
+    font-family "Montserrat 400", sans-serif
+    color color383838
+    font-size 14px
+
+.searh-popup-product
+  display flex
+  align-items center
+  margin-bottom 23px
+
+.searh-popup-product-info__price
+  display flex
+  align-items center
+
+  span:first-child
+    font-family "Montserrat 800", sans-serif
+    font-size 14px
+    margin-right 12px
+
+  span:last-child
+    font-family "Montserrat 400", sans-serif
+    font-size 12px
+    text-decoration line-through
+
+.searh-popup-product__img
+  size(58px)
+  margin-right 18px
+
+.searh-popup-product-info
+
+  a
+    font-family "Montserrat 400", sans-serif
+    font-size 12px
+    display block
+    margin-bottom 7px
+.search-popup-list
+  margin-bottom 20px
+
+.search-popup
+  display none
+
+.header-basket-content
+
+  span
+    font-family "Montserrat 600", sans-serif
+    font-size 12px
+    color color383838
+    span
+      font-family "Montserrat 400", sans-serif
+.header-basket-content--link
+  font-family "Montserrat 500", sans-serif
+  font-size 12px
+  color #00B2CB
+  display block
+
+
+
+.header-basket
+  display flex
+
+
+
+
+
+.header-popup-catalog
+  position absolute
+  left 0
+  top 69.5px
+  height 88vh
+  //min-height: 668px;
+  overflow-y: scroll;
+  z-index 99
+  background-image url("/static/img/general/white.png")
+  background-size 66% 100%
+  background-repeat no-repeat
+  filter drop-shadow(0px 34px 24px rgba(0, 0, 0, 0.13));
+  //transform: translateX(-100vw);
+  //will-change transform
+  //transition all linear .3s
+  border-top 1px solid rgba(75, 75, 75, 0.2)
+  width 100%
+  display none
+//.header-popup-catalog.active
+//  transform translateX(0)
+
+.header-popup-catalog::-webkit-scrollbar
+  width 0
+
+.mini-basket-popup
+  position absolute
+  right 0
+  top 70px
+  background: #FFFFFF;
+  box-shadow: 0px 14px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  width 500px
+  z-index 99
+  padding 26px 20px
+  display none
+  padding-top 5px
+
+.mini-basket__img
+  size(58px)
+  margin-right 14px
+.mini-basket-item
+  display flex
+  border-bottom 1px solid #E6E6E6
+  padding 18px 0
+.mini-basket-content-wrap
+  display flex
+  align-items center
+  justify-content space-between
+  width 100%
+
+.mini-basket-name
+  display block
+  width 100%
+  max-width 220px
+  a
+    font-family "Montserrat 600", sans-serif
+    font-size 12px
+    display block
+    margin-bottom 11px
+
+  span
+    color rgba(75, 75, 75, 0.71)
+    font-size 12px
+    display block
+    font-family "Montserrat 400", sans-serif
+    cursor pointer
+
+.mini-basket-count-price
+  display flex
+  align-items center
+  justify-content space-between
+
+.mini-basket-price
+  font-family "Montserrat 800", sans-serif
+  font-size 12px
+
+.mini-basket-price-stock
+  font-family "Montserrat 400", sans-serif
+  font-size 12px
+  color rgba(56, 56, 56, 0.8)
+  text-decoration line-through
+
+.mini-basket-add-count
+  margin-bottom 11px
+
+.basket-product-buttons
+  transition all linear .2s
+
+  &:hover
+    background-color #383838
+    color #fff
+
+  &:active
+    background-color #222222
+    color #fff
+
+.mini-basket-plus
+  display flex
+  justify-content space-between
+  align-items center
+  margin-bottom 13px
+
+  span
+    font-family "Montserrat 500", sans-serif
+    font-size 14px
+
+.mini-basket-list
+  margin-bottom 18px
+
+.mini-text-green
+  color #7DB408
+
+.mini-basket-order
+  background-color color383838
+  color #fff
+
+  &:hover
+    background-color #EE554B
+    color #fff
+
+  &:active
+    background-color #F53B2F
+    color #fff
+
+
+.header-popup-catalog-list
+  margin-bottom 26px
+
+  span
+    display block
+    font-family "Montserrat 800", sans-serif
+    font-size 14px
+    margin-bottom 14px
+
+.header-popup-catalog-item
+  display flex
+  align-items center
+  margin-bottom 15px
+
+  &:before
+    content ''
+    size(6px)
+    background-color #00B2CB
+    display block
+    margin-right 11px
+
+  a
+    font-family "Montserrat 400", sans-serif
+    font-size 14px
+.header-popup-catalog-wrap
+  padding 24px 15px
+  display flex
+
+
+

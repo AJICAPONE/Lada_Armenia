@@ -1,0 +1,944 @@
+.header-main-top
+  display flex
+
+.header-top-bg
+  background-color #F6F6F6
+  height 60px
+
+.header-logo-and-city,.header-info-basket-items
+  display flex
+  align-items center
+  .icon
+    width: 155px;
+    height: 60px;
+    margin-right 40px
+.header-info-basket-items
+  justify-content space-between
+.my-city
+  font-family "Montserrat 500", sans-serif
+  font-size 12px
+  color color797979
+.header-you-city
+  font-family "Montserrat 600",sans-serif
+  display flex
+  align-items center
+  .icon
+    size(12px)
+    cursor pointer
+.city-choise
+  font-size 12px
+  cursor pointer
+  margin-right 9px
+  color color383838
+
+.header-calls-text
+  color color797979
+  font-family "Montserrat 500", sans-serif
+  font-size 12px
+  margin-bottom 4px
+
+.header-calls-time
+  color color383838
+  font-family "Montserrat 800", sans-serif
+  font-size 12px
+
+.header-calls-callback
+  font-family "Montserrat 500", sans-serif
+  font-size 12px
+  color color00B2CB
+  border-bottom 1px dashed #00B2CB
+  cursor pointer
+
+.header-info-phone-call
+  font-family "Montserrat 800", sans-serif
+  font-size 12px
+  color color383838
+  margin-bottom 4px
+
+.header-info-cols
+  display flex
+  align-items center
+  margin-right 30px
+
+  &:last-child
+    margin-right 0
+
+
+.header-info-calls
+  margin-right 72px
+
+
+.header-basket
+
+  .icon
+    margin-right 16px
+    size(22px,18px)
+    fill color383838
+
+.header-favourite
+
+  .icon
+    margin-right 38px
+    size(19px,22px)
+    fill color383838
+
+.header-basket-link
+  display flex
+  align-items center
+  text-decoration none !important
+
+.header-basket-text
+  font-family "Montserrat 500", sans-serif
+  color color383838
+  font-size 12px
+.header-basket-added
+  display flex
+  position relative
+  align-items center
+.added-basket-product
+  position absolute
+  top -3px
+  right 8px
+  border-radius 50%
+  display flex
+  align-items center
+  justify-content center
+  size(15px)
+  color #fff
+  font-family "Montserrat 500", sans-serif
+  font-size 10px
+  background-color #00B2CB
+.header-main-bottom
+  display flex
+  align-items center
+  height 70px
+
+  .col-lg-6
+    height 100%
+
+.header-bottom-catalog
+  display flex
+  align-items center
+  width 166px
+  height 100%
+  padding 25px
+  cursor pointer
+  transition all linear .2s
+  padding-left 15px
+  margin-right 72px
+
+.header-catalog-text
+  font-family "Montserrat 800", sans-serif
+  font-size 14px
+  color color383838
+
+
+
+.header-bottom-catalog.active
+  background-color color383838
+  color #fff
+  .hamburguer
+    background-color #fff
+    &:before
+      background-color #fff
+    &:after
+      background-color #fff
+  .header-catalog-text
+    color #fff
+
+
+
+.menu-sandwich {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.menu-sandwich .hamburguer {
+  position: relative;
+}
+
+.menu-sandwich .hamburguer,
+.menu-sandwich .hamburguer:before,
+.menu-sandwich .hamburguer:after {
+  display: block;
+  background-color: color383838
+  width: 26px;
+  height: 2.1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-sandwich .hamburguer:before,
+.menu-sandwich .hamburguer:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu-sandwich .hamburguer:before {
+  top: -6.4px
+}
+
+.menu-sandwich .hamburguer:after {
+  bottom: -6.4px
+}
+
+
+.menu-sandwich.active .hamburguer {
+  bottom: 0;
+  transform: rotate(90deg);
+  width: 0;
+}
+
+.menu-sandwich.active .hamburguer:before {
+  top: 0;
+  transform: translateX(-50%) rotate(135deg);
+}
+
+.menu-sandwich.active .hamburguer:after {
+  bottom: 0;
+  transform: translate(-50%) rotate(45deg);
+}
+
+.header-search-input-wrap
+  position relative
+  display flex
+  align-items center
+
+  .icon
+    size(22px)
+    fill color383838
+
+
+.header-bottom-seacrh-submit
+  position absolute
+  left 0
+
+.header-main-bottom
+  position relative
+  background-color #fff
+
+  .col-lg-6
+    display flex
+    align-items center
+
+.input-search
+  font-family "Montserrat 300", sans-serif
+  font-size 14px
+  border 1px solid color383838
+  border-radius: 2px;
+  height 42px
+  width 100%
+  padding: 10px 10px 10px 50px;
+
+.input-search::placeholder
+  color color797979
+
+
+.header-bottom-search
+  width 100%
+
+.header-bottom-seacrh-submit
+  background-color transparent
+  border none
+  height 100%
+  padding 0
+  padding-left 14px
+
+.header-nav-panel
+  width 100%
+
+.header-nav-panel-list
+  display flex
+  justify-content space-between
+  padding-left 10px
+
+.header-nav-panel-item
+  position relative
+
+  a
+    font-family "Montserrat 400", sans-serif
+    color color383838
+    font-size 14px
+    text-decoration none
+    display flex
+    align-items center
+
+    .icon
+      size(12px)
+      margin-left 9px
+
+.nav-panel-list-lvl-2
+  position absolute
+  display none
+  z-index 5
+  background-color #fff
+  padding: 2px 10px;
+  width 100%
+  min-width 120px
+  box-shadow: 0px 4px 14px rgba(0,0,0,0.12);
+  border-radius: 2px;
+
+.nav-panel-item-lvl-2
+  padding 5px 0
+
+  a
+    font-size 13px
+
+
+
+.header-main-bottom-wrap
+  display flex
+  align-items center
+  height 100%
+  position relative
+
+.main-swiper-slide__img
+  width 100%
+
+.my-swiper-pagination
+  bottom 22px !important
+
+  span
+    background-color color383838
+    size(8px)
+  .swiper-pagination-bullet-active-main
+    background-color color383838 !important
+
+  .swiper-pagination-bullet
+    transform scale(1)
+    border 1px solid color383838
+    background-color transparent
+    opacity 1
+    margin 0 8px !important
+
+.my-arrows-wrap
+  display flex
+  absolute-center()
+  justify-content space-between
+  width 100%
+  z-index 2
+  pointer-events none
+
+
+
+.my-button-arrows
+  display flex
+  justify-content center
+  align-items center
+  background-color #fff
+  border-radius 50%
+  size(44px)
+  pointer-events auto
+  outline none
+  cursor pointer
+  margin 0 24px
+
+  .icon
+    size(14px)
+    fill color383838
+.my-button-arrows.swiper-button-disabled
+  opacity 0.6
+.main-swiper-slide-content
+  position absolute
+  top 96px
+  bottom 90px
+  left 105px
+  width 100%
+  max-width 400px
+
+.my-swiper-content-category
+  font-family "Montserrat 500", sans-serif
+  font-size 14px
+  color color383838
+  letter-spacing 0.02em
+  text-transform uppercase
+  margin-bottom 14px
+
+.my-swiper-content-title
+  font-family "Montserrat 300", sans-serif
+  font-size 45px
+  margin-bottom 30px
+  color color383838
+
+.my-swiper-content-price
+  font-size 26px
+  font-family "Montserrat 800", sans-serif
+  color color383838
+  margin-bottom 90px
+
+.my-swiper-content-link
+  display flex
+  align-items center
+  font-family "Montserrat 500", sans-serif
+  font-size 16px
+  text-decoration none
+
+  span
+    color color383838
+    margin-right 16px
+
+  .icon
+    size(13px)
+    display flex
+    align-items center
+    justify-content center
+    transform rotate(-90deg)
+.my-swiper-content-link--icon
+
+    border 1.4px solid color383838
+    padding 7px
+    border-radius 50%
+
+.slider-and-baners
+  display flex
+
+.img-width-100
+  width 100%
+
+.baners-ride-slider
+  display flex
+  flex-direction column
+  justify-content space-between
+  height 100%
+
+.baner-slider-first,.baner-slider-second
+  position relative
+
+.baner-slider-content
+  display flex
+  position absolute
+  right 0
+  left 0
+  bottom 0
+  top 0
+
+.baner-stock-procent-number
+  position absolute
+  background-color #C4F066
+  border-radius 2px
+  font-family "Montserrat 900", sans-serif
+  font-size 30px
+  line-height 0.7
+  color color383838
+  padding 8px
+  padding-top 5px
+  bottom 44px
+  left 28px
+  z-index 2
+
+  &:after
+    content '  до'
+    position absolute
+    background-color #C4F066
+    border-radius 2px
+    font-family "Montserrat 900", sans-serif
+    font-size 19px
+    line-height 0.7
+    color color383838
+    padding 10px
+    width: 100%;
+    left: -9px;
+    top: -15px;
+    z-index: -1;
+
+.baner-stock-procent,.baner-stock-content
+  size(100%)
+
+.baner-stock-content
+  text-align right
+  display flex
+  flex-direction column
+  justify-content center
+
+
+.baner-stock-stock
+  font-family "Montserrat 500", sans-serif
+  font-size 12px
+  color #fff
+
+.baner-stock-title
+  font-family "Montserrat 900", sans-serif
+  font-size 26px
+  color #fff
+
+.baner-stock-content
+
+  .my-swiper-content-link
+    position absolute
+    right 35px
+    bottom 45px
+  .my-swiper-content-link span
+    color #fff
+    font-size 14px
+    font-family "Montserrat 500", sans-serif
+  .my-swiper-content-link--icon
+    border 1.4px solid #fff
+
+  .my-swiper-content-link .icon
+    fill #fff
+    transform: rotate(0deg);
+    size(9px)
+
+.baner-stock-stock
+  padding-right 34px
+  margin-bottom 6px
+
+
+.baner-stock-title
+  padding-right 34px
+  margin-bottom 60px
+
+
+.red-baner
+  background-color #EE554B
+  color #fff
+
+  &:after
+    background-color #EE554B
+    color #fff
+
+.color383838
+  color color383838 !important
+
+  .icon
+    fill color383838 !important
+
+.bc-383838
+  border 1.4px solid #383838 !important
+
+
+.section-title
+  font-family "Montserrat 800", sans-serif
+  font-size 26px
+  margin-bottom 25px
+
+.populat-catalog
+  margin 0 15px
+  margin-bottom 40px
+
+.popular-catalog-item
+  display grid
+  text-align center
+  padding 30px
+  transition all linear .2s
+
+  &:hover
+    background-color color383838
+    color inherit
+
+    .icon
+      fill #fff
+    .popular-catalog-item-category,.popular-catalog-item--title
+      color #fff
+
+  .icon
+    size(62px)
+    fill color383838
+    margin 0 auto
+    margin-bottom 35px
+
+.popular-catalog-item-category
+  font-size 11px
+  font-family "Montserrat 500", sans-serif
+  text-transform uppercase
+  margin-bottom 11px
+
+
+.popular-catalog-item--title
+  font-family "Montserrat 800", sans-serif
+  font-size 18px
+
+.polulat-catalog-wrap
+  padding 0 !important
+
+.guarantie-main
+  background-color #F6F6F6
+  border-radius 2px
+  display flex
+  margin 0 15px
+
+
+.guarantie-main-item
+  display flex
+  align-items center
+
+  .icon
+    size(36px)
+    margin-right 18px
+    fill #EE554B
+
+.guarantie-main-item-wrap
+  display flex
+  justify-content center
+  margin 30px 0
+
+  &:nth-child(2)
+    border-left 1px solid rgba(56, 56, 56, 0.12)
+    border-right 1px solid rgba(56, 56, 56, 0.12)
+  span
+    font-family "Montserrat 800", sans-serif
+    font-size 14px
+    margin-bottom 7px
+  p
+    font-family "Montserrat 400", sans-serif
+    font-size 14px
+
+.last-day-products-list
+  display flex
+  margin-bottom 65px
+
+.last-day_img
+  padding 23px
+
+.product-stock-procent
+  display block
+  position absolute
+  top 10px
+  left 5px
+  text-align center
+  line-height 0.8
+  background-color #C4F066
+  font-family "Montserrat 900", sans-serif
+  font-size 14px
+  padding 5px
+  border-radius 2px
+  padding-bottom 9px
+  padding-top 0
+  width 60px
+  z-index 1
+
+  &:after
+    content ' '
+    position absolute
+    line-height 0.8
+    background-color #C4F066
+    padding 5px
+    border-radius 2px
+    padding-bottom 8px
+    padding-top 0
+    width 100%
+    left: -4px;
+    top: -9px;
+    z-index: -1;
+
+.product-stock-red
+  background-color #EE554B
+  color #fff
+
+  &:after
+    background-color #EE554B
+
+.product-item-last-day__link
+  font-family "Montserrat 400", sans-serif
+  font-size 14px
+  display block
+  margin-bottom 10px
+  position absolute
+
+.product-item-price-and-stock
+  display flex
+  align-items center
+  padding-top 51px
+
+.product-item-price-stock
+  margin-right 15px
+  font-family "Montserrat 800", sans-serif
+  font-size 16px
+.product-item-price-no-stock
+  font-family "Montserrat 400", sans-serif
+  font-size 13px
+  text-decoration-line: line-through;
+  color rgba(56, 56, 56, 0.8)
+
+.last-day-title-and-arrows
+  display flex
+  align-items center
+  justify-content space-between
+  margin-bottom 40px
+
+.last-day-stock-wrapper
+  margin 0 15px
+
+.product-item-last-img-wrap
+  position relative
+  margin-bottom 20px
+
+.product-add-to-basket
+  display flex
+  justify-content center
+  align-items center
+  padding 10px
+  position absolute
+  bottom 0
+  width 100%
+  border 1px solid #E5E5E5
+  cursor pointer
+  transition all linear .2s
+  visibility hidden
+  opacity 0
+
+  .icon
+    size(22px)
+    margin-right 12px
+    transition all linear .2s
+
+  &:hover
+    border 1px solid color383838
+.last-day-product-item:hover
+  .product-add-to-basket,.prodcut-favourite-added
+    visibility visible
+    opacity 1
+
+
+.prodcut-favourite-added
+  position absolute
+  display flex
+  top 6px
+  right 16px
+  visibility hidden
+  opacity 0
+  transition all linear .2s
+  cursor pointer
+  .icon
+    size(18px)
+    fill color383838
+
+.product-add-to-basket-text
+  font-size 12px
+  font-family "Montserrat 400", sans-serif
+
+
+
+.last-day-arrows
+  display flex
+  size(32px)
+  background-color #fff
+  border-radius 50%
+  align-items center
+  justify-content center
+  cursor pointer
+  outline none
+  transition all linear .2s
+
+  &:hover
+    background-color color383838
+    .icon
+      fill #fff
+  &:active
+    background-color #222222
+    .icon
+      fill #fff
+  .icon
+    transition all linear .2s
+
+.last-day-next
+  margin-right 4px
+.last-day-arrows-wrap
+  display flex
+  background-color #EDEDED
+  border-radius 120px
+  padding 4px
+
+  .icon
+    size(11px)
+    fill color383838
+
+.last-day-catalog-items
+  display flex
+  width 100%
+  justify-content space-between
+
+.last-day-catalog-item
+  display flex
+  justify-content space-between
+  height 260px
+  width 49.5%
+  position relative
+  background-color #FFC83B
+  z-index 1
+
+
+  &:after
+    content ''
+    position absolute
+    right 0
+    top 0
+    bottom 0
+    clip-path: polygon(73% 0, 100% 0, 100% 100%, 36% 100%);
+    background-color #FFD058
+    z-index: -1;
+    width 100%
+
+.last-day-cat-info
+  position absolute
+  display flex
+  justify-content center
+  flex-direction column
+  right 0
+  width 48%
+  height 100%
+  text-align right
+  padding-right 48px
+.last-day-cat-category-link
+  display flex
+  align-items center
+  justify-content flex-end
+  span
+    font-family "Montserrat 500", sans-serif
+    font-size 14px
+    display block
+    color color383838
+    margin-right 12px
+.last-day-cat-category-link-icon
+  display flex
+  align-items center
+  justify-content center
+  size(22px)
+  border 1px solid color383838
+  border-radius 50%
+  .icon
+    size(10px)
+    fill color383838
+
+.last-day-cat-category
+  font-family "Montserrat 500", sans-serif
+  font-size 12px
+  letter-spacing 0.02em
+  margin-bottom 12px
+
+.last-day-cat-category-title
+  font-family "Montserrat 900", sans-serif
+  font-size 26px
+  margin-bottom 100px
+
+
+.last-day-catalog-item__img
+  background-size contain
+  background-repeat no-repeat
+  width 70%
+  height 100%
+  margin-left 55px
+
+
+
+.blue-catalog-item
+  background-color #93DEFF
+
+  &:after
+    background-color #A5E4FF
+
+.all-firm-slider-wrap
+  display flex
+  align-items center
+
+.last-dat-product-in-catalog
+  margin-bottom 50px
+
+//.all-firm-slide
+//  max-width 120px
+
+.new-products
+  background-color #F6F6F6
+
+.new-products-wrap
+  padding 60px 0
+
+.last-day-products-list .swiper-wrapper
+  margin 0 -15px
+
+.new-products-slider .last-day_img
+  padding 0
+.new-products-slider .product-stock-procent
+  display none
+
+.new-products-slider .swiper-wrapper
+  margin 0 -15px
+
+
+.new-products-wrap-arrows
+  display flex
+  justify-content space-between
+  align-items baseline
+  margin-bottom 15px
+
+.new-product-next
+  margin-right 4px
+
+.new-products-wrap
+  margin 0 15px
+
+.section-text
+  font-family "Montserrat 400", sans-serif
+  font-size 16px
+  line-height 2
+  margin-bottom 14px
+
+.long-baner-wrap a
+  font-family "Montserrat 500", sans-serif
+  font-size 14px
+  color #00B2CB
+  border-bottom 1px dashed #00B2CB
+
+.long-baner-wrap
+  width 48%
+
+.long-baner
+  padding 70px 0
+
+.long-baner-bg
+  background-size contain
+  background-repeat no-repeat
+  width: 48%;
+  position: absolute;
+  right: 0;
+  top: -70px;
+  bottom: 0;
+
+.long-baner-content
+  display flex
+  width 100%
+  position relative
+
+.you-view
+  background-color #F6F6F6
+  padding 70px 0
+
+.you-view-products-list .last-day_img
+  padding 0
+.you-view-products-list .product-stock-procent
+  top 25px
+
+.you-view-products-list .swiper-wrapper
+  margin 0 -15px
+
+.you-view-container-title
+  display flex
+  align-items center
+  justify-content space-between
+
+.you-view-clear
+  display flex
+  align-items center
+  cursor pointer
+
+  .icon
+    size(12px)
+    fill color383838
+    margin-right 10px
+
+.you-view-clear-text
+  display flex
+  align-items center
+  font-family "Montserrat 500", sans-serif
+  font-size 14px
+
+
+
+
+
+
