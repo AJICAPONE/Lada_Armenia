@@ -1,1 +1,73 @@
 header
+    .h-header.container
+        .h-header__top
+            .h-header__top_left
+                a.h-header__logo(href='/')
+                    +icon2('logo')
+                h2.h-header__title Авторские туры и экскурсии
+                    span по Армении
+            .h-header__top_right
+                .c-contact-info
+                    a.c-contact-info__phone(href='tel:+374 (77) 533 561') +374 (77) 533 561
+                    a.c-contact-info__email(href='mailto:ladatravelarmenia@yandex.ru') ladatravelarmenia@yandex.ru
+                .h-header__button-call(data-bs-toggle="modal" data-bs-target="#popop-call") Заказать звонок
+
+        .h-header__bottom
+            .h-header__menu
+                .h-header__list
+                    a.h-header__item(href='/') Главная
+                    .h-header__item
+                        .h-header__item_depth1
+                            span О нас
+                            +icon('arrow-down')
+                        .h-header__depth1_submenu
+                            .s-submenu__list
+                                a.s-submenu__item(href='/') Индивидуальные экскурсии
+                                a.s-submenu__item(href='/') Групповые экскурсии
+                                a.s-submenu__item(href='/') Корпоративные экскурсии
+                    .h-header__item
+                        .h-header__item_depth1
+                            span Туры
+                            +icon('arrow-down')
+                        .h-header__depth1_submenu
+                            .s-submenu__list
+                                a.s-submenu__item(href='/') Индивидуальные экскурсии
+                                a.s-submenu__item(href='/') Групповые экскурсии
+                                a.s-submenu__item(href='/') Корпоративные экскурсии
+                    .h-header__item
+                        .h-header__item_depth1
+                            span Экскурсии
+                            +icon('arrow-down')
+                        .h-header__depth1_submenu
+                            .s-submenu__list
+                                a.s-submenu__item(href='/') Индивидуальные экскурсии
+                                a.s-submenu__item(href='/') Групповые экскурсии
+                                a.s-submenu__item(href='/') Корпоративные экскурсии
+                    .h-header__item
+                        .h-header__item_depth1
+                            span Направления
+                            +icon('arrow-down')
+                        .h-header__depth1_submenu
+                            .s-submenu__list
+                                a.s-submenu__item(href='/') Индивидуальные экскурсии
+                                a.s-submenu__item(href='/') Групповые экскурсии
+                                a.s-submenu__item(href='/') Корпоративные экскурсии
+                    .h-header__item
+                        .h-header__item_depth1
+                            span Проживание
+                            +icon('arrow-down')
+                        .h-header__depth1_submenu
+                            .s-submenu__list
+                                a.s-submenu__item(href='/') Индивидуальные экскурсии
+                                a.s-submenu__item(href='/') Групповые экскурсии
+                                a.s-submenu__item(href='/') Корпоративные экскурсии
+                    .h-header__item
+                        .h-header__item_depth1
+                            span Об Армении
+                            +icon('arrow-down')
+                        .h-header__depth1_submenu
+                            .s-submenu__list
+                                a.s-submenu__item(href='/') Индивидуальные экскурсии
+                                a.s-submenu__item(href='/') Групповые экскурсии
+                                a.s-submenu__item(href='/') Корпоративные экскурсии
+                    a.h-header__item(href='/') Контакты

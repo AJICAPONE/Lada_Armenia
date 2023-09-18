@@ -1,0 +1,18 @@
+#popop-call.modal.fade.popup-bg(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content.popup2-content
+            button.close.popup-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                +icon('close')
+            .popup-question-content
+                .popup-1-right-content
+                    .popup-title.text-center У вас есть вопросы?
+                    p.popup-text-question Оставьте свой номер телефона и мы вам перезвоним
+                    form
+                        .inputs__wrapper
+                            input.teamlight-input(type="text" placeholder="Ваше имя")
+                            input.teamlight-input(type="phone" placeholder="Номер телефона" data-mask='+7(000) 000 00 00')
+                        button.teamlight-buttons__call(type="submit" disabled="disabled") Заказать звонок
+
+
+
+
