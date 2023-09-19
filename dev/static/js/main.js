@@ -11,6 +11,18 @@ $(document).ready(function () {
         e.stopPropagation();
     });
 
+    $('.m-mobile__menu_item').on('click', function () {
+        let currentSelectEl = $(this).find('.m-menu__depth1_submenu');
+        currentSelectEl.slideToggle(200);
+        $('.m-menu__depth1_submenu').not(currentSelectEl).slideUp(200);
+    });
+    $(document).click(function (e) {
+        if (!$(e.target).closest(".m-mobile__menu_item,.m-menu__depth1_submenu").length) {
+            $('.m-menu__depth1_submenu').slideUp(200);
+        }
+        e.stopPropagation();
+    });
+
     $('.s-services__item').on('mouseenter', function () {
         $(this).addClass('active');
         let currentSelectEl = $(this).find('.s-services__steps_container');
@@ -45,13 +57,7 @@ $(document).ready(function () {
        $('.t-tour__select').removeClass('active');
     });
 
-    // $('[data-toggle="datepicker"]').datepicker({
-    //     autoShow: false,
-    //     language: 'ru-RU',
-    //     // trigger: '.data-exam-popup',
-    //     pickedClass: 'picked-day-migdex',
-    //     highlightedClass: 'today-day-migdex',
-    // });
+
     $('[data-toggle="datepicker"]').datepicker({
         autoShow: false,
         language: 'ru-RU',
@@ -63,19 +69,14 @@ $(document).ready(function () {
         }
     });
 
+    $('.open-mobile-menu').on('click',function () {
+       $(this).next('.m-mobile__menu').addClass('active');
+    });
 
+    $('.close-mobile-menu').on('click',function () {
+        $('.m-mobile__menu').removeClass('active');
+    });
 
-    // $('.popup-calendar').datepicker({
-    //     autoShow: false,
-    //     language: 'ru-RU',
-    //     // autoHide: true,
-    //     trigger: '.data-exam-popup',
-    //     container: '.popup-calendar',
-    //     pickedClass: 'picked-day-migdex',
-    //     highlightedClass: 'today-day-migdex',
-    //     zIndex: 1050,
-    //     // inline: true,
-    // });
 
 
 

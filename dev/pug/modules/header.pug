@@ -2,7 +2,7 @@ header
     .h-header.container
         .h-header__top
             .h-header__top_left
-                a.h-header__logo(href='/')
+                a.h-header__logo.logo(href='/')
                     +icon2('logo')
                 h2.h-header__title Авторские туры и экскурсии
                     span по Армении
@@ -10,7 +10,43 @@ header
                 .c-contact-info
                     a.c-contact-info__phone(href='tel:+374 (77) 533 561') +374 (77) 533 561
                     a.c-contact-info__email(href='mailto:ladatravelarmenia@yandex.ru') ladatravelarmenia@yandex.ru
-                .h-header__button-call(data-bs-toggle="modal" data-bs-target="#popop-call") Заказать звонок
+                .h-header__button-call(data-bs-toggle="modal" data-bs-target="#popop-call")
+                    span Заказать звонок
+                    +icon('call')
+                .h-header__mobile_menu.open-mobile-menu
+                    +icon('menu')
+                .m-mobile__menu
+                    .m-mobile__menu_top
+                        .h-header__top_left
+                            a.h-header__logo.logo(href='/')
+                                +icon2('logo')
+                            h2.h-header__title Авторские туры и экскурсии
+                                span по Армении
+                        .h-header__top_right
+                            .c-contact-info
+                                a.c-contact-info__phone(href='tel:+374 (77) 533 561') +374 (77) 533 561
+                                a.c-contact-info__email(href='mailto:ladatravelarmenia@yandex.ru') ladatravelarmenia@yandex.ru
+                            .h-header__button-call(data-bs-toggle="modal" data-bs-target="#popop-call")
+                                span Заказать звонок
+                                +icon('call')
+                            .h-header__mobile_menu.close-mobile-menu
+                                +icon('close')
+                    .m-mobile__menu__bottom
+                        a.m-mobile__menu_item(href='/') Главная
+                        .m-mobile__menu_item
+                            .m-menu__depth
+                                span О нас
+                                +icon('arrow-down')
+                            .m-menu__depth1_submenu
+                                .m-menu__submenu_list
+                                    a.m-menu__submenu_list_item(href='/') Индивидуальные экскурсии
+                                    a.m-menu__submenu_list_item(href='/') Групповые экскурсии
+                                    a.m-menu__submenu_list_item(href='/') Корпоративные экскурсии
+
+
+
+
+
 
         .h-header__bottom
             .h-header__menu
